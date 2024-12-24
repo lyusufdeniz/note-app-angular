@@ -95,12 +95,7 @@ The build artifacts will be stored in the `dist/note-app` directory.
 - Time format preference (12/24 hour)
 - Custom tag colors
 
-## Browser Support
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
 
 ## Contributing
 
