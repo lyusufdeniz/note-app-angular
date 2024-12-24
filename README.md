@@ -27,7 +27,7 @@ Papirus is a sleek, iOS-styled note-taking application built with Angular. It of
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/papirus.git
+git clone https://github.com/lyusufdeniz/papirus.git
 cd papirus
 ```
 
