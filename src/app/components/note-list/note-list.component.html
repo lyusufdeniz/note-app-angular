@@ -1,0 +1,103 @@
+<div class="notes-container">
+    <div class="notes-header">
+      <div class="header-title">
+        <img src="assets/favicon/favicon.svg" alt="Papirus" class="app-icon">
+        <h1>{{ 'NOTES.TITLE' | translate }}</h1>
+        <span class="notes-count">{{ allNotes.length }}</span>
+      </div>
+      <div class="header-actions">
+        <button class="action-btn" (click)="showOptionsMenu()" [title]="'NOTES.OPTIONS' | translate">
+          <i class="fas fa-ellipsis-vertical"></i>
+        </button>
+        <button class="create-btn" (click)="createNewNote()" [title]="'NOTES.NEW_NOTE' | translate">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+    </div>
+    
+    <div class="search-container">
+      <div class="search-bar">
+        <i class="fas fa-magnifying-glass"></i>
+        <input 
+          type="text" 
+          [(ngModel)]="searchQuery"
+          (ngModelChange)="filterNotes()"
+          [placeholder]="'NOTES.SEARCH' | translate"
+        >
+        <button *ngIf="searchQuery" (click)="clearSearch()">
+          <i class="fas fa-xmark"></i>
+        </button>
+      </div>
+      <div class="tag-filters" *ngIf="availableTags.length">
+        <button *ngFor="let tag of availableTags"
+                class="tag-filter"
+                [class.selected]="selectedTags.includes(tag.id)"
+                [style.background-color]="tag.color"
+                (click)="toggleTagFilter(tag)">
+          {{ tag.name }}
+        </button>
+      </div>
+    </div>
+
+    <div class="notes-list" 
+         infiniteScroll
+         [infiniteScrollDistance]="1"
+         [infiniteScrollThrottle]="50"
+         [infiniteScrollUpDistance]="1.5"
+         [scrollWindow]="false"
+         [immediateCheck]="true"
+         (scrolled)="onScroll()">
+      <div class="notes-list-content">
+        <div *ngFor="let group of groupedNotes" class="note-group">
+          <div class="date-header">{{ group.date }}</div>
+          
+          <div *ngFor="let note of group.notes" class="note-item">
+            <div class="note-content" (click)="showNotePreview(note)">
+              <h3>{{ note.title }}</h3>
+              <p class="note-preview">
+                {{ stripHtmlTags(note.content) | slice:0:50 }}{{ stripHtmlTags(note.content).length > 50 ? '...' : '' }}
+              </p>
+              <div class="note-footer">
+                <div class="note-tags" *ngIf="note.tags?.length">
+                  <span *ngFor="let tag of note.tags" 
+                        class="tag" 
+                        [style.background-color]="tag.color">
+                    {{ tag.name }}
+                  </span>
+                </div>
+                <span class="note-date">{{ note.lastModified | date:getTimeFormat():undefined:currentLang }}</span>
+              </div>
+            </div>
+            <div class="note-actions">
+              <button class="edit-btn" (click)="editNote(note.id); $event.stopPropagation()" [title]="'NOTES.EDIT' | translate">
+                <i class="fas fa-pen"></i>
+              </button>
+              <button class="delete-btn" (click)="deleteNote(note.id); $event.stopPropagation()" [title]="'NOTES.DELETE' | translate">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div *ngIf="loading" class="loading-more">
+          <i class="fas fa-circle-notch fa-spin"></i>
+          {{ 'NOTES.LOADING_MORE' | translate }}
+        </div>
+
+        <div *ngIf="!loading && hasMore" class="scroll-hint">
+          <i class="fas fa-chevron-down fa-bounce"></i>
+          {{ 'NOTES.SCROLL_FOR_MORE' | translate }}
+        </div>
+
+        <div *ngIf="!loading && !hasMore && groupedNotes.length > 0" class="end-of-notes">
+          <i class="fas fa-check-circle"></i>
+          {{ searchQuery ? ('NOTES.SEARCH_END' | translate) : ('NOTES.END' | translate) }}
+        </div>
+
+        <div *ngIf="!loading && groupedNotes.length === 0" class="no-notes">
+          <i class="fas fa-note-sticky"></i>
+          {{ searchQuery ? ('NOTES.NO_RESULTS' | translate) : ('NOTES.EMPTY' | translate) }}
+        </div>
+      </div>
+    </div>
+  </div>

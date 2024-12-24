@@ -1,0 +1,50 @@
+<div class="note-editor">
+  <div class="editor-header">
+    <div class="title-container">
+      <input 
+        [(ngModel)]="note.title" 
+        [placeholder]="'EDITOR.PLACEHOLDER.TITLE' | translate" 
+        class="title-input"
+        autofocus>
+    </div>
+    <div class="actions">
+      <button class="save-btn" (click)="saveNote()">
+        <i class="fas fa-check"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="tags-section">
+    <div class="tags-list">
+      <ng-container *ngFor="let tag of note.tags">
+        <span class="tag" 
+              [style.background-color]="tag.color">
+          {{ tag.name }}
+          <i class="fas fa-times" (click)="removeTag(tag)"></i>
+        </span>
+      </ng-container>
+      <ng-container *ngFor="let tag of availableTags">
+        <button *ngIf="!isTagSelected(tag)"
+                class="available-tag"
+                [style.color]="tag.color"
+                [style.border-color]="tag.color"
+                (click)="toggleTag(tag)">
+          <i class="fas fa-plus"></i>
+          {{ tag.name }}
+        </button>
+      </ng-container>
+      <button class="add-tag-btn" (click)="createNewTag()">
+        <i class="fas fa-plus"></i>
+        {{ 'TAGS.CREATE_NEW' | translate }}
+      </button>
+    </div>
+  </div>
+  
+  <div class="editor-container">
+    <editor
+      [(ngModel)]="note.content"
+      [init]="editorConfig"
+      [disabled]="false">
+    </editor>
+  </div>
+</div>

@@ -1,0 +1,115 @@
+{
+  "NOTES": {
+    "TITLE": "Papirus",
+    "NEW_NOTE": "Yeni Not",
+    "UNTITLED": "Başlıksız Not",
+    "DELETE_CONFIRM": "Notu Sil",
+    "DELETE_MESSAGE": "Bu notu silmek istediğinizden emin misiniz?",
+    "DELETED": "Not Silindi!",
+    "SAVE": "Kaydet",
+    "DELETE": "Sil",
+    "CANCEL": "İptal",
+    "EXPORT": "Notları Dışa Aktar",
+    "IMPORT": "Notları İçe Aktar",
+    "EXPORTED": "Notlar Dışa Aktarıldı!",
+    "IMPORTED": "Notlar İçe Aktarıldı!",
+    "IMPORT_ERROR": "Not İçe Aktarma Hatası",
+    "SEARCH": "Not ara...",
+    "END": "Tüm notlar gösterildi",
+    "EMPTY": "Henüz not yok",
+    "SEARCH_END": "Başka sonuç bulunamadı",
+    "NO_RESULTS": "Eşleşen not bulunamadı",
+    "PAGE_INFO": "Sayfa {{current}}/{{total}}",
+    "MORE_ITEMS": "+{{count}} öğe daha",
+    "EDIT": "Düzenle",
+    "CLOSE": "Kapat",
+    "PREV_PAGE": "Önceki Sayfa",
+    "NEXT_PAGE": "Sonraki Sayfa",
+    "DELETE_ALL": "Tüm Notları Sil",
+    "DELETE_ALL_CONFIRM": "Tüm Notları Sil?",
+    "DELETE_ALL_MESSAGE": "Bu işlem geri alınamaz. Onaylamak için 'DELETE' yazın.",
+    "DELETE_ALL_PLACEHOLDER": "Onaylamak için DELETE yazın",
+    "DELETE_ALL_ERROR": "Lütfen onaylamak için DELETE yazın",
+    "ALL_DELETED": "Tüm notlar silindi!",
+    "OPTIONS": "Seçenekler",
+    "SCROLL_FOR_MORE": "Daha fazla not için kaydırın",
+    "IMPORT_CONFIRM": "Notları İçe Aktar",
+    "IMPORT_MERGE_MESSAGE": "Mevcut notlarla birleştirmek mi yoksa değiştirmek mi istiyorsunuz?",
+    "IMPORT_MERGE": "Birleştir",
+    "IMPORT_REPLACE": "Değiştir"
+  },
+  "EDITOR": {
+    "PLACEHOLDER": {
+      "TITLE": "Not başlığı",
+      "CONTENT": "Notunuzu yazmaya başlayın..."
+    },
+    "SAVED": "Not kaydedildi!",
+    "SAVE_ERROR": "Not kaydedilemedi",
+    "UNSAVED_CHANGES": "Kaydedilmemiş değişiklikleriniz var"
+  },
+  "MESSAGES": {
+    "ERROR": {
+      "LOAD": "Kayıtlı notlar yüklenemedi",
+      "SAVE": "Notlar kaydedilemedi"
+    }
+  },
+  "THEME": {
+    "TOGGLE": "Temayı değiştir",
+    "DARK": "Karanlık mod",
+    "LIGHT": "Aydınlık mod"
+  },
+  "LANGUAGE": {
+    "TOGGLE": "Dili değiştir",
+    "EN": "İngilizce",
+    "TR": "Türkçe"
+  },
+  "TAGS": {
+    "CREATE_TITLE": "Etiket Oluştur",
+    "NAME_PLACEHOLDER": "Etiket adı",
+    "SAVE": "Kaydet",
+    "CANCEL": "İptal",
+    "CREATED": "Etiket oluşturuldu!",
+    "DELETED": "Etiket silindi",
+    "UPDATED": "Etiket güncellendi",
+    "VALIDATION_ERROR": "Lütfen bir isim girin ve renk seçin",
+    "MANAGE_TITLE": "Etiketleri Yönet",
+    "CREATE_NEW": "Yeni Etiket Oluştur",
+    "APPLY": "Uygula",
+    "CUSTOM_COLOR": "Özel renk",
+    "DELETE_CONFIRM": "Etiketi Sil",
+    "DELETE_MESSAGE": "Bu işlem etiketi tüm notlardan kaldıracak. Bu işlem geri alınamaz.",
+    "DELETE": "Sil",
+    "DELETE_ALL": "Tüm Etiketleri Sil",
+    "DELETE_ALL_CONFIRM": "Tüm Etiketleri Sil?",
+    "DELETE_ALL_MESSAGE": "Bu işlem tüm etiketleri tüm notlardan kaldıracak. Onaylamak için 'DELETE' yazın.",
+    "DELETE_ALL_PLACEHOLDER": "Onaylamak için DELETE yazın",
+    "DELETE_ALL_ERROR": "Lütfen onaylamak için DELETE yazın",
+    "ALL_DELETED": "Tüm etiketler silindi!"
+  },
+  "TIME": {
+    "FORMAT_12": "24 saat formatına geç",
+    "FORMAT_24": "12 saat formatına geç"
+  },
+  "ONBOARDING": {
+    "WELCOME": "Papirus'a Hoş Geldiniz!",
+    "FEATURE_1": "Tek tıkla yeni notlar oluşturun",
+    "FEATURE_2": "Notlarınızı renkli etiketlerle düzenleyin",
+    "FEATURE_3": "Notlarınızı yedekleyin",
+    "FEATURE_4": "Yedekten notlarınızı geri yükleyin",
+    "FEATURE_5": "Karanlık ve aydınlık tema arasında geçiş yapın",
+    "FEATURE_6": "Tercih ettiğiniz dili seçin (TR/EN)",
+    "FEATURE_7": "Saat formatını zelleştirin (12/24 saat)",
+    "FEATURE_8": "Notlarınızda anında arama yapın",
+    "GET_STARTED": "Hadi Başlayalım",
+    "SKIP": "Geç",
+    "NEXT": "İleri",
+    "PREVIOUS": "Geri"
+  },
+  "APP": {
+    "SHARE": "Papirus'u Paylaş",
+    "SHARE_TEXT": "Papirus'u keşfedin - Harika bir not alma uygulaması!",
+    "COPY_URL": "Bağlantıyı Kopyala",
+    "URL_COPIED": "Bağlantı Kopyalandı!",
+    "REFRESH": "Sayfayı Yenile"
+  }
+} 

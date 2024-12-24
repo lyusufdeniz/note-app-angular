@@ -1,27 +1,118 @@
-# NoteApp
+# Papirus - Modern Note-Taking App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
+Papirus is a sleek, iOS-styled note-taking application built with Angular. It offers a beautiful and intuitive interface for managing your notes with powerful features and seamless user experience.
 
-## Development server
+![Papirus Logo](src/assets/favicon/favicon.svg)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- 📝 Create, edit, and delete notes with a rich text editor
+- 🏷️ Organize notes with colorful tags
+- 🔍 Instant search functionality
+- 📱 Responsive design with iOS-style interface
+- 🌓 Dark/Light theme support
+- 🌐 Multi-language support (English/Turkish)
+- ⏰ Customizable time format (12/24 hour)
+- 💾 Import/Export notes for backup
+- ♾️ Infinite scroll for smooth note browsing
+- 📊 Smart date-based note grouping
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular CLI (v17 or higher)
 
-## Running unit tests
+### Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/papirus.git
+cd papirus
+```
 
-## Running end-to-end tests
+2. Install dependencies:
+```bash
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Start the development server:
+```bash
+ng serve
+```
 
-## Further help
+4. Open your browser and navigate to `http://localhost:4200`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Building for Production
+
+To build the application for production:
+
+```bash
+ng build --configuration production
+```
+
+The build artifacts will be stored in the `dist/note-app` directory.
+
+## Technology Stack
+
+- Angular 17
+- TypeScript
+- SCSS
+- SweetAlert2
+- TinyMCE
+- Font Awesome
+- Flag Icons
+
+## Features in Detail
+
+### Note Management
+- Create new notes with a single click
+- Rich text editing with TinyMCE
+- Auto-save functionality
+- Note preview with formatted content
+- Delete notes with confirmation
+
+### Tag System
+- Create custom tags with color selection
+- Filter notes by tags
+- Manage tags (create, edit, delete)
+- Multiple tags per note
+
+### User Interface
+- iOS-style design elements
+- Smooth animations and transitions
+- Responsive layout for all devices
+- Touch-friendly interface
+
+### Data Management
+- Local storage for persistent data
+- Import/Export functionality for backup
+- Merge or replace options when importing
+
+### Customization
+- Dark/Light theme toggle
+- Language selection (EN/TR)
+- Time format preference (12/24 hour)
+- Custom tag colors
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Font Awesome for icons
+- Flag Icons for language flags
+- TinyMCE for rich text editing
+- SweetAlert2 for beautiful dialogs

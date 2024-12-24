@@ -1,0 +1,114 @@
+.tag-dialog {
+  padding: 20px;
+  
+  h2 {
+    margin: 0 0 20px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+
+    .tag-input {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: none;
+      background: var(--card-background);
+      color: var(--text-color);
+      font-size: 15px;
+      outline: none;
+      box-shadow: 0 1px 3px var(--border-color);
+
+      &::placeholder {
+        color: var(--text-secondary);
+      }
+
+      &:focus {
+        box-shadow: 0 2px 6px var(--border-color);
+      }
+    }
+  }
+
+  .color-picker {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .color-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &.selected {
+        transform: scale(1.1);
+        border-color: var(--text-color);
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .preview {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+    .tag-preview {
+      padding: 4px 12px;
+      border-radius: 15px;
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+    button {
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: none;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &.cancel-btn {
+        background: var(--card-background);
+        color: var(--text-color);
+      }
+
+      &.save-btn {
+        background: var(--accent-color);
+        color: white;
+
+        &:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+      }
+
+      &:not(:disabled):hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+      }
+
+      &:not(:disabled):active {
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
+    }
+  }
+} 

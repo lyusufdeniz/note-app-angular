@@ -1,0 +1,115 @@
+{
+  "NOTES": {
+    "TITLE": "Papirus",
+    "NEW_NOTE": "New Note",
+    "UNTITLED": "Untitled Note",
+    "DELETE_CONFIRM": "Delete Note",
+    "DELETE_MESSAGE": "Are you sure you want to delete this note?",
+    "DELETED": "Note Deleted!",
+    "SAVE": "Save",
+    "DELETE": "Delete",
+    "CANCEL": "Cancel",
+    "EXPORT": "Export Notes",
+    "IMPORT": "Import Notes",
+    "EXPORTED": "Notes Exported!",
+    "IMPORTED": "Notes Imported!",
+    "IMPORT_ERROR": "Error Importing Notes",
+    "SEARCH": "Search notes...",
+    "END": "You've reached the end",
+    "EMPTY": "No notes yet",
+    "SEARCH_END": "No more results",
+    "NO_RESULTS": "No matching notes found",
+    "PAGE_INFO": "Showing page {{current}} of {{total}}",
+    "MORE_ITEMS": "+{{count}} more items",
+    "EDIT": "Edit",
+    "CLOSE": "Close",
+    "PREV_PAGE": "Previous Page",
+    "NEXT_PAGE": "Next Page",
+    "DELETE_ALL": "Delete All Notes",
+    "DELETE_ALL_CONFIRM": "Delete All Notes?",
+    "DELETE_ALL_MESSAGE": "This action cannot be undone. Type 'DELETE' to confirm.",
+    "DELETE_ALL_PLACEHOLDER": "Type DELETE to confirm",
+    "DELETE_ALL_ERROR": "Please type DELETE to confirm",
+    "ALL_DELETED": "All notes deleted!",
+    "OPTIONS": "Options",
+    "SCROLL_FOR_MORE": "Scroll for more notes",
+    "IMPORT_CONFIRM": "Import Notes",
+    "IMPORT_MERGE_MESSAGE": "Do you want to merge with existing notes or replace them?",
+    "IMPORT_MERGE": "Merge",
+    "IMPORT_REPLACE": "Replace"
+  },
+  "EDITOR": {
+    "PLACEHOLDER": {
+      "TITLE": "Note title",
+      "CONTENT": "Start typing your note..."
+    },
+    "SAVED": "Note saved!",
+    "SAVE_ERROR": "Error saving note",
+    "UNSAVED_CHANGES": "You have unsaved changes"
+  },
+  "MESSAGES": {
+    "ERROR": {
+      "LOAD": "Failed to load saved notes",
+      "SAVE": "Failed to save notes"
+    }
+  },
+  "THEME": {
+    "TOGGLE": "Toggle theme",
+    "DARK": "Dark mode",
+    "LIGHT": "Light mode"
+  },
+  "LANGUAGE": {
+    "TOGGLE": "Change language",
+    "EN": "English",
+    "TR": "Turkish"
+  },
+  "TAGS": {
+    "CREATE_TITLE": "Create Tag",
+    "NAME_PLACEHOLDER": "Tag name",
+    "SAVE": "Save",
+    "CANCEL": "Cancel",
+    "CREATED": "Tag created!",
+    "DELETED": "Tag deleted",
+    "UPDATED": "Tag updated",
+    "VALIDATION_ERROR": "Please enter a name and select a color",
+    "MANAGE_TITLE": "Manage Tags",
+    "CREATE_NEW": "Create New Tag",
+    "APPLY": "Apply",
+    "CUSTOM_COLOR": "Custom color",
+    "DELETE_CONFIRM": "Delete Tag",
+    "DELETE_MESSAGE": "This will remove the tag from all notes. This action cannot be undone.",
+    "DELETE": "Delete",
+    "DELETE_ALL": "Delete All Tags",
+    "DELETE_ALL_CONFIRM": "Delete All Tags?",
+    "DELETE_ALL_MESSAGE": "This will remove all tags from all notes. Type 'DELETE' to confirm.",
+    "DELETE_ALL_PLACEHOLDER": "Type DELETE to confirm",
+    "DELETE_ALL_ERROR": "Please type DELETE to confirm",
+    "ALL_DELETED": "All tags deleted!"
+  },
+  "TIME": {
+    "FORMAT_12": "Switch to 24-hour format",
+    "FORMAT_24": "Switch to 12-hour format"
+  },
+  "ONBOARDING": {
+    "WELCOME": "Welcome to Papirus!",
+    "FEATURE_1": "Create new notes with a single click",
+    "FEATURE_2": "Organize notes with colorful tags",
+    "FEATURE_3": "Export your notes for backup",
+    "FEATURE_4": "Import notes from backup",
+    "FEATURE_5": "Switch between dark and light themes",
+    "FEATURE_6": "Choose your preferred language (EN/TR)",
+    "FEATURE_7": "Customize time format (12/24 hour)",
+    "FEATURE_8": "Search through all your notes instantly",
+    "GET_STARTED": "Let's Get Started",
+    "SKIP": "Skip",
+    "NEXT": "Next",
+    "PREVIOUS": "Previous"
+  },
+  "APP": {
+    "SHARE": "Share Papirus",
+    "SHARE_TEXT": "Check out Papirus - A beautiful note-taking app!",
+    "COPY_URL": "Copy Link",
+    "URL_COPIED": "Link Copied!",
+    "REFRESH": "Refresh Page"
+  }
+} 
